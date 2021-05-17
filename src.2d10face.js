@@ -10,7 +10,9 @@ module.exports=[{id:"XWaQXcbk0",name:"Картофель, запеченный �
 "use strict";function e(e,r){var t=document.querySelector(".js-menu"),n=r(e);t.insertAdjacentHTML("beforeend",n)}Object.defineProperty(exports,"__esModule",{value:!0}),exports.markupMenuCard=e;
 },{}],"yj0S":[function(require,module,exports) {
 "use strict";function e(){var e={LIGHT:"light-theme",DARK:"dark-theme"},t=document.querySelector("body"),c=document.querySelector("#theme-switch-toggle");c.addEventListener("change",function(){c.checked?(t.classList.replace(e.LIGHT,e.DARK),localStorage.setItem("theme",e.DARK)):(t.classList.replace(e.DARK,e.LIGHT),localStorage.setItem("theme",e.LIGHT))}),t.classList.add(e.LIGHT),localStorage.getItem("theme")&&t.classList.add(localStorage.getItem("theme")),t.classList.contains(e.DARK)&&(c.checked=!0)}Object.defineProperty(exports,"__esModule",{value:!0}),exports.changeTheme=e;
+},{}],"clu1":[function(require,module,exports) {
+
 },{}],"Focm":[function(require,module,exports) {
-"use strict";var e=n(require("./templates/template-menu.handlebars")),r=n(require("./menu.json")),u=require("./js/rander-menu.js"),a=require("./js/change-theme.js");function n(e){return e&&e.__esModule?e:{default:e}}(0,u.markupMenuCard)(r.default,e.default),(0,a.changeTheme)();
-},{"./templates/template-menu.handlebars":"PuQm","./menu.json":"mA8c","./js/rander-menu.js":"orCM","./js/change-theme.js":"yj0S"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.05b8cb3b.js.map
+"use strict";var e=a(require("./templates/template-menu.handlebars")),r=a(require("./menu.json")),u=require("./js/rander-menu.js"),s=require("./js/change-theme.js");function a(e){return e&&e.__esModule?e:{default:e}}require("./sass/main.scss"),(0,u.markupMenuCard)(r.default,e.default),(0,s.changeTheme)();
+},{"./templates/template-menu.handlebars":"PuQm","./menu.json":"mA8c","./js/rander-menu.js":"orCM","./js/change-theme.js":"yj0S","./sass/main.scss":"clu1"}]},{},["Focm"], null)
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.2d10face.js.map
